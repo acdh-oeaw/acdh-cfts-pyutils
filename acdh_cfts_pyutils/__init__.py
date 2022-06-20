@@ -3,7 +3,7 @@ import typesense
 
 
 TYPESENSE_API_KEY = os.environ.get('TYPESENSE_API_KEY', 'xyz')
-TYPESENSE_SEARCH_KEY = os.environ.get('TYPESENSE_SEARCH_KEY','9B1PUuRZU5szyFE6HZGRHi19f03aWIql')
+TYPESENSE_SEARCH_KEY = os.environ.get('TYPESENSE_SEARCH_KEY', '9B1PUuRZU5szyFE6HZGRHi19f03aWIql')
 TYPESENSE_TIMEOUT = os.environ.get('TYPESENSE_TIMEOUT', '120')
 TYPESENSE_HOST = os.environ.get('TYPESENSE_HOST', 'typesense.acdh-dev.oeaw.ac.at')
 TYPESENSE_PORT = os.environ.get('TYPESENSE_PORT', '443')
@@ -22,8 +22,10 @@ TYPESENSE_CLIENT = typesense.Client(
     }
 )
 
+CFTS_SCHEMA_NAME = os.environ.get('CFTS_SCHEMA_NAME', 'cfts')
+
 CFTS_SCHEMA = {
-    'name': 'cfts',
+    'name': CFTS_SCHEMA_NAME,
     'fields': [
         {
             'name': 'id',
@@ -90,4 +92,4 @@ CFTS_SCHEMA = {
     ]
 }
 
-CFTS_COLLECTION = TYPESENSE_CLIENT.collections['cfts']
+CFTS_COLLECTION = TYPESENSE_CLIENT.collections[CFTS_SCHEMA_NAME]
