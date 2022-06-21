@@ -5,6 +5,7 @@ from acdh_cfts_pyutils import CFTS_SCHEMA
 CFTS_SCHEMA_FIELD_NAMES = [
     'id',
     'rec_id',
+    'resolver',
     'project',
     'title',
     'full_text',
