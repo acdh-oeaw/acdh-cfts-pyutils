@@ -36,8 +36,13 @@ CFTS_SCHEMA = {
             'type': 'string'
         },
         {
-            'name': 'project',
+            'name': 'resolver',
             'type': 'string'
+        },
+        {
+            'name': 'project',
+            'type': 'string',
+            'facet': True
         },
         {
             'name': 'title',

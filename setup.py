@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup(
     name='acdh-cfts-pyutils',
-    version='0.1',
+    version='0.2',
     description='Python Package to interact with a dedicated Typesense Server and Collection',
     url='https://github.com/acdh-oeaw/acdh-cfts-pyutils',
     author='Peter Andorfer',
