@@ -1,5 +1,6 @@
 [![Test](https://github.com/acdh-oeaw/acdh-cfts-pyutils/actions/workflows/test.yml/badge.svg)](https://github.com/acdh-oeaw/acdh-cfts-pyutils/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/acdh-oeaw/acdh-cfts-pyutils/branch/master/graph/badge.svg?token=JF7T9ID1MM)](https://codecov.io/gh/acdh-oeaw/acdh-cfts-pyutils)
+[![PyPI version](https://badge.fury.io/py/acdh-cfts-pyutils.svg)](https://badge.fury.io/py/acdh-cfts-pyutils)
 [![flake8 Lint](https://github.com/acdh-oeaw/acdh-cfts-pyutils/actions/workflows/lint.yml/badge.svg)](https://github.com/acdh-oeaw/acdh-cfts-pyutils/actions/workflows/lint.yml)
 
 
