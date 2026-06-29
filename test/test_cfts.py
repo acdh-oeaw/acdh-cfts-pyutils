@@ -32,7 +32,7 @@ class TestCfts(unittest.TestCase):
         self.assertIsInstance(CFTS_SCHEMA, dict)
 
     def test_002(self):
-        self.assertEqual(len(CFTS_SCHEMA.keys()), 2)
+        self.assertEqual(len(CFTS_SCHEMA.keys()), 3)
 
     def test_003(self):
         self.assertEqual(len(CFTS_SCHEMA["fields"]), len(CFTS_SCHEMA_FIELD_NAMES))
