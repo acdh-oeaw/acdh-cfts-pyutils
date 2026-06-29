@@ -1,0 +1,33 @@
+[project]
+name = "acdh-cfts-pyutils"
+version = "1.0.0"
+description = "Python Package to interact with the CFTS-Collection"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typesense>=2.0.0",
+]
+authors = [
+    { name = "Peter Andorfer", email = "peter.andorfer@oeaw.ac.at" }
+]
+[project.urls]
+Repository = "https://github.com/acdh-oeaw/acdh-cfts-pyutils.git"
+
+[dependency-groups]
+dev = [
+    "coverage>=7.14.3",
+    "pytest>=9.1.1",
+    "ruff>=0.15.20",
+]
+
+[tool.coverage.run]
+source_pkgs = ["acdh_cfts_pyutils"]
+
+[tool.coverage.report]
+omit = [
+    "test/*",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.0,<0.12.0"]
+build-backend = "uv_build"

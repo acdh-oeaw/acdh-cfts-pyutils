@@ -3,19 +3,19 @@ import unittest
 from acdh_cfts_pyutils import CFTS_SCHEMA
 
 CFTS_SCHEMA_FIELD_NAMES = [
-    'id',
-    'rec_id',
-    'resolver',
-    'project',
-    'title',
-    'full_text',
-    'date',
-    'year',
-    'persons',
-    'places',
-    'orgs',
-    'works',
-    'keywords'
+    "id",
+    "rec_id",
+    "resolver",
+    "project",
+    "title",
+    "full_text",
+    "date",
+    "year",
+    "persons",
+    "places",
+    "orgs",
+    "works",
+    "keywords",
 ]
 
 
@@ -35,4 +35,4 @@ class TestCfts(unittest.TestCase):
         self.assertEqual(len(CFTS_SCHEMA.keys()), 2)
 
     def test_003(self):
-        self.assertEqual(len(CFTS_SCHEMA['fields']), len(CFTS_SCHEMA_FIELD_NAMES))
+        self.assertEqual(len(CFTS_SCHEMA["fields"]), len(CFTS_SCHEMA_FIELD_NAMES))
