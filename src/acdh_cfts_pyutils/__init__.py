@@ -28,6 +28,11 @@ CFTS_SCHEMA_NAME = os.environ.get("CFTS_SCHEMA_NAME", "cfts")
 
 CFTS_SCHEMA = {
     "name": CFTS_SCHEMA_NAME,
+    "metadata": {
+        "owners": ["Peter Andorfer"],
+        "description": "Fulltext index over several projects, see https://github.com/acdh-oeaw/acdh-cfts-pyutils",
+        "service_ids": [28216],
+    },
     "fields": [
         {
             "name": "id",
